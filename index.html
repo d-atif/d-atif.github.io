@@ -20,40 +20,43 @@
             font-style: normal;
         }
 
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .content {
+            padding: 36px 28px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
         .name {
-            position: absolute;
-            top: 40px;
-            left: 27px;
-            font-family: Arial, Helvetica, sans-serif;
             font-size: 16px;
-            /* font-weight: bold; */
+            margin-bottom: 20px;
         }
 
         .text-container {
-            top: 60px;
-            position: absolute;
-            left: 27px;
-            right: 50px;
-            /* Adjust this to position it correctly */
-            font-family: Arial, sans-serif;
+            margin-bottom: 30px;
             font-size: 14px;
             line-height: 1.6;
-            /* max-width: 350px; */
         }
 
         .mathematics {
-            font-family: serifont
+            font-family: serifont;
         }
 
         .quote-container {
-            position: absolute;
-            bottom: 105px;
-            left: 27px;
-            right: 27px;
             max-width: 310px;
-            font-family: Arial, sans-serif;
             font-size: 14px;
-            line-height: 1.6;
+            margin-top: 150px;
+            color: #777;
         }
 
         .quote {
@@ -62,51 +65,59 @@
         }
 
         .speaker {
-            margin-right: 10px;
-            /* font-weight: bold; */
             font-style: italic;
+            margin-right: 10px;
+            flex-shrink: 0;
+            width: 60px;
+            /* Example width for the speaker text */
         }
 
         .quote-text {
-            flex-grow: 1;
+            text-indent: 0;
+            /* Remove text indentation */
+            margin-left: 0;
+            /* Ensure no left margin */
+            display: inline-block;
+            /* Allows text to wrap naturally */
+            width: calc(100% - 70px);
+            /* Accounts for speaker width and small margin */
         }
 
         .last-updated {
-            position: absolute;
-            bottom: 10px;
-            left: 25px;
-            font-family: Arial, sans-serif;
             font-size: 12px;
             color: #777777e3;
+            margin: 20px 27px 18px;
+            align-self: flex-start;
         }
     </style>
 </head>
 
 <body>
-    <div class="name">Atif Degirmendžić</div>
+    <div class="content">
+        <div class="name">Atif Degirmendžić</div>
 
-    <div class="text-container">
-        <p>done many different things, my work is hard to find&mdash;looking to change that<br>
-            currently studying <span class="mathematics">Mathematics</span>@University of Sarajevo<br>
-            <br>
-            here is my email de.atifζ@gmail.com (ζ=10), I'd be happy to hear from you <br>
-        </p>
-    </div>
-
-    <div class="quote-container">
-        <div class="quote">
-            <span class="speaker">Student:</span>
-            <span class="quote-text">How can one realize his Self-nature? I know so little about the subject.</span>
+        <div class="text-container">
+            <p>done many different things, my work is hard to find&mdash;looking to change that<br>
+                currently studying <span class="mathematics">Mathematics</span>@University of Sarajevo<br>
+                <br>
+                here is my email de.atifζ@gmail.com (ζ=10), I'd be happy to hear from you <br>
+            </p>
         </div>
 
-        <div class="quote">
-            <span class="speaker">Yasutani:</span>
-            <span class="quote-text">First of all, you must be convinced you can do so. The conviction creates
-                determination, and determination zeal. But if you lack conviction, if you think "maybe I can get it,
-                maybe I can't", or even worse, "This is beyond me!"—you won't awaken no matter how much you do
-                zazen.</span>
-        </div>
+        <div class="quote-container">
+            <div class="quote">
+                <span class="speaker">Student:</span>
+                <span class="quote-text">How can one realize his Self-nature? I know so little about the subject.</span>
+            </div>
 
+            <div class="quote">
+                <span class="speaker">Yasutani:</span>
+                <span class="quote-text">First of all, you must be convinced you can do so. The conviction creates
+                    determination, and determination zeal. But if you lack conviction, if you think "maybe I can get it,
+                    maybe I can't", or even worse, "This is beyond me!"—you won't awaken no matter how much you do
+                    zazen.</span>
+            </div>
+        </div>
     </div>
     <div class="last-updated">last update January 26 2025</div>
 </body>
