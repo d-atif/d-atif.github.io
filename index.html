@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ATIF DEGIRMENDŽIĆ</title>
     <style>
-        
         @font-face {
             font-family: 'CustomFont';
             src: url('./fonts/cmu.serif-bold.ttf') format('truetype');
@@ -17,7 +17,7 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #f5f5f5; 
+            background-color: #f5f5f5;
         }
 
         .name {
@@ -27,6 +27,15 @@
             font-family: 'CustomFont', sans-serif;
             font-size: 16px;
             font-weight: bold;
+        }
+
+        .text-container {
+            top: 80px;
+            /* Adjust this to position it correctly */
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+            max-width: 350px;
         }
 
         .quote-container {
@@ -53,12 +62,16 @@
         .quote-text {
             flex-grow: 1;
         }
-    
     </style>
 </head>
+
 <body>
     <div class="name">ATIF DEGIRMENDŽIĆ</div>
-    
+
+    <div class="quote-container text-container">
+        <p>done many different things. currently studying mathematics</p>
+    </div>
+
     <div class="quote-container">
         <div class="quote">
             <span class="speaker">Student:</span>
@@ -67,8 +80,12 @@
 
         <div class="quote">
             <span class="speaker">Yasutani:</span>
-            <span class="quote-text">First of all, you must be convinced you can do so. The conviction creates determination, and determination zeal. But if you lack conviction, if you think "maybe I can get it, maybe I can't", or even worse, "This is beyond me!"—you won't awaken no matter how much you do zazen.</span>
+            <span class="quote-text">First of all, you must be convinced you can do so. The conviction creates
+                determination, and determination zeal. But if you lack conviction, if you think "maybe I can get it,
+                maybe I can't", or even worse, "This is beyond me!"—you won't awaken no matter how much you do
+                zazen.</span>
         </div>
     </div>
 </body>
+
 </html>
