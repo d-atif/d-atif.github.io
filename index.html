@@ -22,14 +22,51 @@
         .name {
             position: absolute;
             top: 20px;
-            left: 18.5px;
+            left: 19px;
             font-family: 'CustomFont', sans-serif;
-            font-size: 12px;
+            font-size: 16px;
             font-weight: bold;
+        }
+
+        .quote-container {
+            position: absolute;
+            top: 50px;
+            left: 19px;
+            max-width: calc(100% - 38px);
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .quote {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .speaker {
+            margin-right: 10px;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .quote-text {
+            flex-grow: 1;
         }
     </style>
 </head>
 <body>
     <div class="name">ATIF DEGIRMENDŽIĆ</div>
+    
+    <div class="quote-container">
+        <div class="quote">
+            <span class="speaker">Student:</span>
+            <span class="quote-text">How can one realize his Self-nature? I know so little about the subject.</span>
+        </div>
+
+        <div class="quote">
+            <span class="speaker">Yasutani:</span>
+            <span class="quote-text">First of all, you must be convinced you can do so. The conviction creates determination, and determination zeal. But if you lack conviction, if you think "maybe I can get it, maybe I can't", or even worse, "This is beyond me!"—you won't awaken no matter how much you do zazen.</span>
+        </div>
+    </div>
 </body>
 </html>
