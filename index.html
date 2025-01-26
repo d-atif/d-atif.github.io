@@ -12,11 +12,36 @@
             font-weight: normal;
             font-style: normal;
         }
+
         @font-face {
             font-family: 'serifont';
             src: url('./fonts/cmu.serif-bold.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
+        }
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0 20px;
+            width: calc(100% - 40px);
+            overflow-x: hidden;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            .name,
+            .text-container,
+            .quote-container,
+            .last-updated {
+                position: static;
+                margin: 20px 0;
+                left: auto;
+                width: 100%;
+            }
         }
 
         body {
@@ -46,8 +71,8 @@
             /* max-width: 350px; */
         }
 
-        .mathematics{
-            font-family:serifont
+        .mathematics {
+            font-family: serifont
         }
 
         .quote-container {
@@ -94,7 +119,7 @@
             currently studying <span class="mathematics">Mathematics</span>@University of Sarajevo<br>
             <br>
             here is my email de.atifζ@gmail.com (ζ=10), I'd be happy to hear from you <br>
-            </p>
+        </p>
     </div>
 
     <div class="quote-container">
