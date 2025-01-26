@@ -56,7 +56,7 @@
             max-width: 310px;
             font-size: 14px;
             margin-top: 130px;
-            margin-bottom: 25px;
+            /* margin-bottom: 25px; */
             /* color: #777; */
         }
 
@@ -84,51 +84,13 @@
             /* Accounts for speaker width and small margin */
         }
 
-        .last-updated-container {
-    position: absolute;
-    bottom: 10px;
-    left: 19px;
-    display: flex;
-    align-items: center;
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    color: #777;
-}
-
-.last-updated {
-    margin-right: 10px;
-}
-
-.stars {
-    flex-grow: 1;
-    text-align: right;
-    letter-spacing: 2px;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-/* Default for narrow screens */
-.stars::after {
-    content: "★★★★";
-}
-
-/* More stars for wider screens */
-@media (min-width: 600px) {
-    .stars::after {
-        content: "★★★★★★★";
-    }
-}
-
-@media (min-width: 900px) {
-    .stars::after {
-        content: "★★★★★★★★★";
-    }
-}
-@media (min-width: 1200px) {
-    .stars::after {
-        content: "★★★★★★★★★★★★★★★★★★★★";
-    }
-}
+        .last-updated {
+            font-size: 12px;
+            color: #777777e3;
+            /* margin:60px 0px 18px; */
+            bottom: 20px;
+            align-self: flex-start;
+        }
     </style>
 </head>
 
@@ -158,10 +120,7 @@
                     zazen.</span>
             </div>
         </div>
-        <div class="last-updated-container">
-            <span class="last-updated">&mdash;last update 26 January 2024&mdash;</span>
-            <span class="stars">★★★★★</span>
-        </div>
+        <div class="last-updated">&mdash;last update January 26 2025</div>
     </div>
 </body>
 
